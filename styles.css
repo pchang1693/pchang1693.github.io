@@ -41,11 +41,13 @@ a:hover {
 }
 
 .sidebar {
+    display: flex;
+    justify-content: center;
     position: fixed;
     left: 0;
     width: 25%;
     height: 100%;
-    background: #aaaaaa;
+    background: #fbf8f8;
 }
 
 .main-container {
@@ -89,3 +91,14 @@ a:hover {
 }
 
 /* --- ids --- */
+#large-initial {
+    width: 50%;
+}
+
+#sidebar-line {
+    border-right: 2px solid #dfdfdf;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    height: 90%;
+}
