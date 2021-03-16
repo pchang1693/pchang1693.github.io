@@ -104,7 +104,7 @@ a:hover {
 
 /* --- ids --- */
 #large-initial {
-    /*width: 70%;*/
+    width: 100%;
     /*align-self: center;*/
     margin: 0 0 18px 0;
 }
