@@ -1,6 +1,7 @@
 /* --- all --- */
 * {
     font-family: 'Red Hat Text', sans-serif;
+    color: #505050;
 }
 
 /* --- elements --- */
@@ -13,9 +14,14 @@ body {
     background: #fbf8f8;
 }
 
+h2 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400; /* normal weight */
+}
+
 p {
     font-size: 13px;
-    color: #505050;
 }
 
 a:link {
@@ -42,11 +48,16 @@ a:hover {
 
 .sidebar {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /*align-items: center;*/      /* center horizontally */
+    justify-content: center;  /* center vertically */
+    text-align: left;
     position: fixed;
     left: 0;
-    width: 25%;
     height: 100%;
+    /* (width + (padding * 2)) must add up to 25% -- messy */
+    width: 17%;
+    padding: 0 4%;
     background: #fbf8f8;
 }
 
@@ -92,7 +103,9 @@ a:hover {
 
 /* --- ids --- */
 #large-initial {
-    width: 50%;
+    width: 70%;
+    /*align-self: center;*/
+    margin: 0 0 18px 0;
 }
 
 #sidebar-line {
