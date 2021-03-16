@@ -17,11 +17,12 @@ body {
 h2 {
     font-size: 18px;
     line-height: 24px;
-    font-weight: 400; /* normal weight */
+    font-weight: 500; /* medium weight */
 }
 
 p {
     font-size: 13px;
+    line-height: 20px;
 }
 
 a:link {
@@ -56,8 +57,8 @@ a:hover {
     left: 0;
     height: 100%;
     /* (width + (padding * 2)) must add up to 25% -- messy */
-    width: 17%;
-    padding: 0 4%;
+    width: 15%;
+    padding: 0 5%;
     background: #fbf8f8;
 }
 
@@ -103,7 +104,7 @@ a:hover {
 
 /* --- ids --- */
 #large-initial {
-    width: 70%;
+    /*width: 70%;*/
     /*align-self: center;*/
     margin: 0 0 18px 0;
 }
@@ -114,4 +115,8 @@ a:hover {
     top: 5%;
     right: 0;
     height: 90%;
+}
+
+#sidebar-description {
+    margin: 0;
 }
