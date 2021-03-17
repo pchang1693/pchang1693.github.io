@@ -35,8 +35,9 @@ a:visited {
     text-decoration: none;
 }
 
-a:hover {
+a.nav-link:hover {
     color: #D65555;
+    background-color: #f8eeee;
 }
 
 /* --- classes --- */
