@@ -112,7 +112,7 @@ a.nav-link:hover {
 .display-recent {
     margin: 0 0 40px 0;
     width: 100%;
-    height: 500px;
+
 }
 
 .wireframe {
@@ -148,13 +148,14 @@ a.nav-link:hover {
 }
 
 #display-recent-img {
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    padding-top: 56.25%;  /* keeps ratio when resizing window */
     background: linear-gradient(
         180deg, 
         rgba(64, 64, 64, 0.1) 0%, 
         rgba(62, 80, 64, 0.7) 100%
         ), url("assets/preview-plant.png");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
