@@ -1,7 +1,12 @@
-/* --- all --- */
+/* --- all/selectors --- */
 * {
     font-family: 'Red Hat Text', sans-serif;
     color: #505050;
+}
+
+::selection {
+    color: #fbf8f8;
+    background: #ee9595;
 }
 
 /* --- elements --- */
@@ -108,6 +113,9 @@ a.nav-link:hover {
     margin: 0 0 40px 0;
     width: 100%;
     height: 500px;
+}
+
+.wireframe {
     background: #aaaaaa;
 }
 
@@ -137,4 +145,16 @@ a.nav-link:hover {
 
 #sidebar-description {
     margin: 0;
+}
+
+#display-recent-img {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(
+        180deg, 
+        rgba(64, 64, 64, 0.1) 0%, 
+        rgba(62, 80, 64, 0.7) 100%
+        ), url("assets/preview-plant.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
