@@ -19,6 +19,12 @@ body {
     background: #fbf8f8;
 }
 
+h1 {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 500; /* med8ium */
+}
+
 h2 {
     font-size: 18px;
     line-height: 24px;
@@ -26,8 +32,8 @@ h2 {
 }
 
 p {
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 22px;
 }
 
 a:link {
@@ -87,22 +93,23 @@ a.nav-link:hover {
     top: 0;
     right: 0;
     /* (width + (padding * 2)) must add up to 75% -- messy */
-    width: 65%;
-    padding: 0 5%;
+    width: 63%;
+    padding: 0 6%;
 }
 
 .top-nav {
     display: flex;
     justify-content: center;
     position: fixed;
+    z-index: 1; /* to fix cover from preview-img position: relative */
     top: 0;
     right: 0;
     /* (width + (padding * 2)) must add up to 75% -- messy */
-    width: 65%;
-    padding: 0 5%;
+    width: 45%;
+    padding: 0 15%;
     height: auto;
     background: #fbf8f8;
-    opacity: 0.85;
+    opacity: 0.9;
 }
 
 .content-container {
@@ -112,20 +119,64 @@ a.nav-link:hover {
 .display-recent {
     margin: 0 0 40px 0;
     width: 100%;
-
 }
 
 .wireframe {
-    background: #aaaaaa;
+    height: 450px;
+    background: #cccccc;
 }
 
-/* styling */
+/* text styling */
 .nav-link {
-    flex: 1;
     text-align: center;
-    padding: auto;
+    padding: 0 6%;
     height: 70px;
     line-height: 70px;
+}
+
+.title {
+    margin: 24px 0 0 0;
+}
+
+.date {
+    margin: 0 auto;
+    color: #D65555;
+}
+
+.single-letter {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    margin: 0;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 20vw;
+    line-height: 13vw;  /* this value was trial/error */
+    font-weight: 500;
+    color: #fbf8f8;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+/* preview image styling */
+.preview-img {
+    /* override padding-top and background-image for styling */
+    position: relative;
+    width: 100%;
+    /* keep ratio when resizing window */
+    padding-top: 56.25%;  /* default ratio 16:9 */
+    background: #aaaaaa;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pi-recent {
+    padding-top: 56.25%;  /* default 16:9 */
+    background-image: linear-gradient(
+        180deg, 
+        rgba(64, 64, 64, 0.1) 0%, 
+        rgba(62, 80, 64, 0.7) 100%
+        ), url("assets/preview-plant.png");
 }
 
 /* --- ids --- */
@@ -145,17 +196,4 @@ a.nav-link:hover {
 
 #sidebar-description {
     margin: 0;
-}
-
-#display-recent-img {
-    width: 100%;
-    padding-top: 56.25%;  /* keeps ratio when resizing window */
-    background: linear-gradient(
-        180deg, 
-        rgba(64, 64, 64, 0.1) 0%, 
-        rgba(62, 80, 64, 0.7) 100%
-        ), url("assets/preview-plant.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
