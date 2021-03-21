@@ -121,6 +121,11 @@ a.nav-link:hover {
     width: 100%;
 }
 
+.display-recent-row {
+    display: flex;
+    gap: 40px;
+}
+
 .wireframe {
     height: 450px;
     background: #cccccc;
@@ -134,7 +139,11 @@ a.nav-link:hover {
     line-height: 70px;
 }
 
-.title {
+.section-title {
+    color: #D65555;
+}
+
+.design-title {
     margin: 24px 0 0 0;
 }
 
@@ -170,12 +179,21 @@ a.nav-link:hover {
     background-repeat: no-repeat;
 }
 
-.pi-recent {
+.pi-latest {
     padding-top: 56.25%;  /* default 16:9 */
     background-image: linear-gradient(
         180deg, 
         rgba(64, 64, 64, 0.1) 0%, 
         rgba(62, 80, 64, 0.7) 100%
+        ), url("assets/preview-plant.png");
+}
+
+.pi-recent {
+    padding-top: 75%;  /* default 16:9 */
+    background-image: linear-gradient(
+        180deg, 
+        rgba(64, 64, 64, 0.1) 0%, 
+        rgba(62, 62, 80, 0.7) 100%
         ), url("assets/preview-plant.png");
 }
 
