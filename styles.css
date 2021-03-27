@@ -84,9 +84,9 @@ a.nav-link:hover {
     position: fixed;
     left: 0;
     height: 100%;
-    /* (width + (padding * 2)) must add up to 25% -- messy */
+    /* (width + padding) must add up to 20% */
     width: 15%;
-    padding: 0 5%;
+    padding: 0 0 0 5%;
     background: #fbf8f8;
 }
 
@@ -109,8 +109,8 @@ a.nav-link:hover {
     position: absolute;
     top: 0;
     right: 0;
-    /* (width + (padding * 2)) must add up to 75% -- messy */
-    width: 63%;
+    /* (width + (padding * 2)) must add up to 80% */
+    width: 68%;
     padding: 0 6%;
 }
 
@@ -129,8 +129,14 @@ a.nav-link:hover {
     opacity: 0.9;
 }
 
-.content-container {
-    margin: 70px 0 0 0;
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .display {
@@ -149,6 +155,10 @@ a.nav-link:hover {
 }
 
 /* text styling */
+.sidebar-desc {
+    margin: 0 0 6px 0;
+}
+
 .nav-link {
     text-align: center;
     padding: 0 6%;
@@ -158,7 +168,9 @@ a.nav-link:hover {
 }
 
 .section-title {
-    color: #D65555;
+    color: #505050;
+    width: fit-content;
+    border-top: 1px solid #D65555;
 }
 
 .design-title {
@@ -184,6 +196,12 @@ a.nav-link:hover {
     -moz-user-select: none;
 }
 
+.red {
+    display: inline;
+    font: inherit;
+    color: #D65555;
+}
+
 /* preview image styling */
 .preview-img {
     /* override padding-top and background-image for styling */
@@ -204,7 +222,6 @@ a.nav-link:hover {
 
 .pi-latest {
     padding-top: 56.25%;  /* default 16:9 */
-    
 }
 
 .pi-recent {
@@ -212,6 +229,18 @@ a.nav-link:hover {
 }
 
 /* --- ids --- */
+#headline {
+    margin: 0 0 2vw 0;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 6vw;
+    line-height: 6vw;
+    font-weight: 500;
+}
+
+#welcome-description {
+    margin: 0 5%;
+}
+
 #large-initial {
     width: 90%;
     /*align-self: center;*/
@@ -224,8 +253,4 @@ a.nav-link:hover {
     top: 5%;
     right: 0;
     height: 90%;
-}
-
-#sidebar-description {
-    margin: 0;
 }
