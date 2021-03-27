@@ -10,6 +10,10 @@
 }
 
 /* --- elements --- */
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -59,6 +63,13 @@ a.nav-link:hover {
 
 /* --- classes --- */
 /* layout */
+.ac {
+    display: block;
+    position: relative;
+    visibility: hidden;
+    top: -70px; /* nav-link height */
+}
+
 .flex-container {
     display: flex;
     height: 100%;
@@ -122,12 +133,12 @@ a.nav-link:hover {
     margin: 70px 0 0 0;
 }
 
-.display-recent {
+.display {
     margin: 0 0 40px 0;
     width: 100%;
 }
 
-.display-recent-row {
+.display-row {
     display: flex;
     gap: 40px;
 }
@@ -202,7 +213,7 @@ a.nav-link:hover {
 
 /* --- ids --- */
 #large-initial {
-    width: 100%;
+    width: 90%;
     /*align-self: center;*/
     margin: 0 0 18px 0;
 }
