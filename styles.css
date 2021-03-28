@@ -244,6 +244,7 @@ a.nav-link:hover {
     border-radius: 50%;
     background: #cccccc;
     opacity: 12%;
+    transition: 0.3s;
 }
 
 /* --- ids --- */
@@ -266,9 +267,17 @@ a.nav-link:hover {
     margin: 0 0 15vh 0;
 }
 
+#c-red:hover {
+    margin: 0 0 10vh 0;
+}
+
 #c-green {
     background: #3f7c65;
     margin: 25vh 0 0 0;
+}
+
+#c-green:hover {
+    margin: 30vh 0 0 0;
 }
 
 #large-initial {
