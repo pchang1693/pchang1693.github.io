@@ -116,8 +116,8 @@ a.nav-link:hover {
     top: 0;
     right: 0;
     /* (width + (padding * 2)) must add up to 80% */
-    width: 68%;
-    padding: 0 6%;
+    width: 64%;
+    padding: 0 8%;
 }
 
 .top-nav {
@@ -232,7 +232,7 @@ a.nav-link:hover {
 }
 
 .pi-recent {
-    padding-top: 116%;  /* default 16:9 */
+    padding-top: 80%;  /* default 16:9 */
 }
 
 /* --- other --- */
