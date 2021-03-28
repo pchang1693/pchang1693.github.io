@@ -36,6 +36,12 @@ h2 {
 }
 
 h3 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500; /* medium weight */
+}
+
+h4 {
     font-size: 18px;
     line-height: 24px;
     font-weight: 500; /* medium weight */
@@ -121,8 +127,8 @@ a.nav-link:hover {
     z-index: 1; /* to fix cover from preview-img position: relative */
     top: 0;
     right: 0;
-    /* (width + (padding * 2)) must add up to 75% -- messy */
-    width: 45%;
+    /* (width + (padding * 2)) must add up to 80% */
+    width: 50%;
     padding: 0 15%;
     height: auto;
     background: #fbf8f8;
@@ -170,7 +176,8 @@ a.nav-link:hover {
 .section-title {
     color: #505050;
     width: fit-content;
-    border-top: 1px solid #D65555;
+    
+    border-top: 2px solid #D65555;
 }
 
 .design-title {
@@ -228,6 +235,17 @@ a.nav-link:hover {
     padding-top: 116%;  /* default 16:9 */
 }
 
+/* --- other --- */
+.circle {
+    position: absolute;
+    align-self: center;
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    background: #cccccc;
+    opacity: 12%;
+}
+
 /* --- ids --- */
 #headline {
     margin: 0 0 2vw 0;
@@ -239,6 +257,18 @@ a.nav-link:hover {
 
 #welcome-description {
     margin: 0 5%;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#c-red {
+    background: #D65555;
+    margin: 0 0 15vh 0;
+}
+
+#c-green {
+    background: #3f7c65;
+    margin: 25vh 0 0 0;
 }
 
 #large-initial {
