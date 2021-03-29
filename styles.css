@@ -109,6 +109,11 @@ a.nav-link:hover {
     width: 35px;
     /* uncomment below for icons to always resize */
     max-width: 100%;
+    transition: 0.3s;
+}
+
+.sidebar-icon:hover {
+    filter: brightness(88%);
 }
 
 .main-container {
@@ -155,9 +160,32 @@ a.nav-link:hover {
     gap: 40px;
 }
 
-.wireframe {
-    height: 450px;
-    background: #cccccc;
+.art-row {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 0 0 20px 0;
+    margin: 0 0 80px 0;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.art-row::-webkit-scrollbar {
+    height: 5px;
+}
+
+.art-row::-webkit-scrollbar-track {
+    background: #fbf8f8;
+}
+
+.art-row::-webkit-scrollbar-thumb {
+    background: #b1c5be;
+}
+
+.art-display {
+    flex: 1;
+    height: 350px;
+    transition: 0.3s;
 }
 
 /* text styling */
@@ -232,7 +260,7 @@ a.nav-link:hover {
 }
 
 .pi-recent {
-    padding-top: 80%;  /* default 16:9 */
+    padding-top: 85%;  /* default 16:9 */
 }
 
 /* --- other --- */
