@@ -314,6 +314,10 @@ a.nav-link:hover {
     margin: 0 0 18px 0;
 }
 
+#sidebar-title {
+    margin: 16px 0 10px 0;
+}
+
 #sidebar-line {
     border-right: 1px solid #bcbcbc;
     position: absolute;
