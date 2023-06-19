@@ -237,6 +237,12 @@ a.nav-link:hover {
     color: #D65555;
 }
 
+.green {
+    display: inline;
+    font: inherit;
+    color: #3f7c65;
+}
+
 /* preview image styling */
 .preview-img {
     /* override padding-top and background-image for styling */
@@ -279,8 +285,8 @@ a.nav-link:hover {
 #headline {
     margin: 0 0 2vw 0;
     font-family: 'Ibarra Real Nova', serif;
-    font-size: 6vw;
-    line-height: 6vw;
+    font-size: 5vw;
+    line-height: 5vw;
     font-weight: 500;
 }
 
