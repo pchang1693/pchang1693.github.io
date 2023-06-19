@@ -232,15 +232,13 @@ a.nav-link:hover {
 }
 
 .red {
-    display: inline;
-    font: inherit;
     color: #D65555;
+    font: inherit;
 }
 
 .green {
-    display: inline;
-    font: inherit;
     color: #3f7c65;
+    font: inherit;
 }
 
 /* preview image styling */
